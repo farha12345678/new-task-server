@@ -73,7 +73,7 @@ async function run() {
         await client.db("admin").command({ ping: 1 });
         console.log("Connected to MongoDB!");
     } finally {
-        // Close client if necessary
+        // Closed the client 
     }
 }
 run().catch(console.dir);
