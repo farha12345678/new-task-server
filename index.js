@@ -38,7 +38,7 @@ async function run() {
                 if (search) query.productName = { $regex: search, $options: 'i' };
 
                 // Build the sort object
-                let sortQuery = {};
+                let sortQuery = {}
                 if (sort === 'price-asc') {
                     sortQuery.price = 1;
                 } else if (sort === 'price-desc') {
