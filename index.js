@@ -59,7 +59,6 @@ async function run() {
                     .limit(size)
                     .toArray();
 
-                // Send the results
                 if (products.length > 0) {
                     res.send({ totalProducts, products });
                 } else {
