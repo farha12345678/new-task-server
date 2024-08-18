@@ -44,9 +44,9 @@ async function run() {
                 } else if (sort === 'price-desc') {
                     sortQuery.price = -1;
                 } else if (sort === 'date-new') {
-                    sortQuery = { creationDate: -1, creationTime: -1 }; // 
+                    sortQuery = { creationDate: -1, creationTime: -1 }; 
                 } else if (sort === 'date-old') {
-                    sortQuery = { creationDate: 1, creationTime: 1 }; // 
+                    sortQuery = { creationDate: 1, creationTime: 1 };  
                 }
 
                 // Get the total number of matching products
