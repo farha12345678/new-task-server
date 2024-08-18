@@ -22,6 +22,8 @@ const client = new MongoClient(uri, {
 async function run() {
     try {
         const productCollection = client.db("productDB").collection('product');
+        
+        // get product
 
         app.get('/product', async (req, res) => {
             try {
